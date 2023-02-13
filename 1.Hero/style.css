@@ -1,0 +1,250 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+}
+
+.container {
+    font-family: "Orbitron";
+}
+
+
+.navbar-container {
+    padding: 40px 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list-item {
+    list-style-type: none;
+    display: inline;
+    margin-right: 40px;
+    position: relative;
+}
+
+.list-item:nth-child(1) {
+    font-weight: 700;
+}
+.list-item:nth-child(1)::after {
+    position: absolute;
+    content: "";
+    bottom: -2px;
+    left: 25%;
+    width: 60%;
+    border-bottom: 2px solid #000;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-icon {
+    margin-right: 12px;
+}
+
+.nav-button {
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 18px;
+    border: 2px solid #000;
+    border-radius: 12px;
+    color: #000;
+    background-color: transparent;
+    padding: 4px 40px;
+}
+
+section[aria-label="banner"] {
+    margin-top: 10px;
+}
+
+.hero-container {
+    padding: 40px 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-container img[alt="person-hero-iamge"] {
+    width: 400px;
+}
+
+.square {
+    position: fixed;
+    z-index: -1;
+    top: 480px;
+    left: 240px;
+}
+.square img {
+    width: 300px;
+}
+
+.star {
+    position: fixed;
+    z-index: -1;
+    top: 150px;
+    right: 150px;
+}
+
+.globe {
+    position: fixed;
+    z-index: -1;
+    top: 140px;
+    left: 50%;
+}
+
+.hero-container-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-left: 40px;
+}
+
+.hero-heading {
+    font-size: 3rem;
+}
+
+.hero-description {
+    font-family: "Poppins";
+    font-weight: 300;
+    font-size: 14px;
+    color: #656565;
+    margin: 40px 60px;
+}
+
+.button-email {
+    font-family: "Orbitron";
+    font-size: 1rem;
+    border: 2px solid #000;
+    border-radius: 12px;
+    color: #000;
+    background-color: transparent;
+    padding: 7px 20px;
+    margin-right: 12px;
+}
+
+.button-join {
+    font-family: "Orbitron";
+    font-size: 1rem;
+    border: 2px solid #000;
+    border-radius: 12px;
+    color: #fff;
+    background-color: #000;
+    padding: 7px 20px;
+}
+
+.contact-heading {
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: #656565;
+    margin-top: 60px;
+}
+
+.icons {
+    margin-top: 20px;
+}
+
+.icons span {
+    margin-right: 10px;
+}
+.icons span img {
+    width: 28px;
+    height: 28px;
+}
+
+@media screen and (max-width: 1024px) {
+    .navbar-container {
+        padding: 40px 40px;
+    }
+    
+    .list-item {
+        margin-right: 20px;
+    }
+
+    img[alt='brand-logo'] {
+        height: 28px;
+    }
+    
+    .hero-container {
+        padding: 40px 40px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .hero-container img[alt="person-hero-iamge"] {
+        width: 300px;
+    } 
+
+    .square {
+        position: fixed;
+        z-index: -1;
+        top: 350px;
+        left: 90px;
+    }
+
+    .hero-heading {
+        font-size: 2rem;
+    }
+    .star {
+        top: 100px;
+        right: 100px;
+    }
+    
+    .globe {
+        top: 120px;
+        left: 40%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-container {
+        padding: 40px 40px;
+        gap: 20px;
+    }
+    .square {
+        top: 300px;
+        left: 180px;
+    }
+    
+    .hero-container {
+        flex-direction: column;
+    }
+    .hero-container-right {
+        padding-left: 0px;
+        margin-top: 80px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .navbar-container {
+        padding: 40px 40px;
+        gap: 20px;
+        flex-direction: column;
+    }
+    .square {
+        top: 380px;
+        left: 100px;
+    }
+    .star {
+        top: 200px;
+        right: 50px;
+    }
+    .globe {
+        top: 250px;
+        left: 40%;
+    }
+    .hero-container {
+        flex-direction: column;
+    }
+    .hero-container-right {
+        padding-left: 0px;
+        margin-top: 80px;
+    }
+}
